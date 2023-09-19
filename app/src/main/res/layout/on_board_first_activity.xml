@@ -75,18 +75,21 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2">
 
         <ImageView
+            android:id="@+id/switcherOne"
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:layout_marginRight="10dp"
             android:src="@drawable/switch_painted"></ImageView>
 
         <ImageView
+            android:id="@+id/switcherTwo"
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:layout_marginRight="10dp"
             android:src="@drawable/switch_non_painted"></ImageView>
 
         <ImageView
+            android:id="@+id/switcherThree"
             android:layout_width="15dp"
             android:layout_height="15dp"
             android:src="@drawable/switch_non_painted"></ImageView>
@@ -94,6 +97,7 @@
 
 
     <ImageView
+        android:id="@+id/imageBoardActivity"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/image_flasks"

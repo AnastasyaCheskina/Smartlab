@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.GestureDetector
 import android.view.MotionEvent
+import android.widget.Button
 
 class OnBoardThirdActivity : AppCompatActivity(), GestureDetector.OnGestureListener {
 
@@ -12,7 +13,13 @@ class OnBoardThirdActivity : AppCompatActivity(), GestureDetector.OnGestureListe
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.on_board_third_activity)
-        gestureDetector = GestureDetector(this, this)
+        gestureDetector = GestureDetector(this, this) //для свайпа
+        var button = findViewById<Button>(R.id.btnMiss)
+        button.setOnClickListener()
+        {
+            val intent = Intent(this, RegisterActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onTouchEvent(event: MotionEvent?): Boolean {
