@@ -23,6 +23,8 @@
             android:text="Завершить"
             android:textColor="@color/light_blue"
             android:textSize="20dp"
+            android:textAllCaps="false"
+            android:layout_marginLeft="20dp"
             ></Button>
 
         <Space
